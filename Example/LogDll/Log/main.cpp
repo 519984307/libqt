@@ -15,18 +15,18 @@ int main(int argc, char *argv[])
     for(int n = 0; n < nMax; ++n)
     {
 
-//        log->debug("debug");
-//        log->info("info");
-//        log->warn("warn");
-//        log->error("error");
-//        log->fatal("fatal");
+                log->debug("debug");
+                log->info("info");
+                log->warn("warn");
+                log->error("error");
+                log->fatal("fatal");
 
-//        qDebug() << "qDebug";
-//        qInfo() << "qInfo";
-//        qWarning() << "qWarning";
-//        qCritical() << "qCritical";
+                qDebug() << "qDebug";
+                qInfo() << "qInfo";
+                qWarning() << "qWarning";
+                qCritical() << "qCritical";
 
-        LOG_DEBUG("DEBUG");
+        LOG_DEBUG("DEBUG %1 %2", 123, QString("hello"));
         LOG_INFO("INFO");
         LOG_WARN("WARN");
         LOG_ERROR("ERROR");
